@@ -26,6 +26,9 @@ export default defineConfig(({ mode }) => {
 
   return {
     base,
+    server: {
+      host: '0.0.0.0',
+    },
     define: { process },
     envPrefix: [`VITE_`, `CF_`],
     plugins: [

@@ -44,12 +44,14 @@ export const MY_CONFIG = {
 
   // Cloudflare R2 图床配置
   // 对应 LocalStorage Key: r2Config
+  // ⚠️ 安全提示：Access Key 和 Secret Key 等敏感信息请在浏览器中手动配置
+  // 这样可以避免在公开的 Git 仓库中暴露密钥
   r2Config: {
-    accountId: 'f6f9315822ee15626e2faa7b83bfc88d',
-    accessKey: '2994028cf76691968914954c30bb001b',
-    secretKey: '107eb5d8d2132ead1ab28637419f23633e225116a931f3d255d2b4d314fd9fe4',
-    bucket: 'images',
-    domain: 'https://img.diverseforest.press',
+    accountId: '', // 请在浏览器中手动输入
+    accessKey: '', // 请在浏览器中手动输入
+    secretKey: '', // 请在浏览器中手动输入
+    bucket: 'images', // 非敏感信息可以预填
+    domain: 'https://img.diverseforest.press', // 非敏感信息可以预填
     path: '', // 存储路径，留空表示根目录
   },
 

@@ -11,10 +11,16 @@ import 'vue-sonner/style.css'
 import '@/assets/index.css'
 import '@/assets/less/theme.less'
 
+// 引入自定义配置注入
+import { injectCustomConfig } from './inject-config'
+
 // 异步初始化 mermaid，避免初始化顺序问题
 initializeMermaid().catch(console.error)
 
 setupComponents()
+
+// 在应用启动前注入配置
+injectCustomConfig()
 
 const app = createApp(App)
 

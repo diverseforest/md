@@ -42,6 +42,7 @@
 - `primaryColor`: 主色调
 - `fontFamily`: 字体
 - `fontSize`: 字体大小
+- `cssPatch`: 启动时自动合并到“自定义 CSS”编辑器当前方案（适合放长期保留的样式覆盖）
 
 ### 2. 图床配置
 
